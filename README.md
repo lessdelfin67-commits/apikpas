@@ -19,12 +19,6 @@ cp .env.example .env
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
-O arquivo `.env.example` já contém a chave solicitada:
-
-```env
-API_KEY=9e8ZyWghoMoWUtt0oK1crfqBbGpspArVJ217pOr98vs
-```
-
 Todos os endpoints de mídia exigem o cabeçalho `X-API-Key`. O endpoint `/health` permanece público.
 
 Swagger: <http://localhost:8000/docs>  
